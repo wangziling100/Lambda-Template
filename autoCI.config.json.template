@@ -2,6 +2,7 @@
     "actions":[
         "cd {{.AppPath}}",
         "yarn install",
+        "pwd",
         "yarn test",
         "cd ..",
         "sam build",
