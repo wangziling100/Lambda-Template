@@ -1,0 +1,9 @@
+{
+    "actions":[
+        "cd app && yarn install",
+        "cd app && yarn test",
+        "sam build",
+        "sam local invoke \"AppFunction\" -e events/event.json --env-vars env.json",
+        "sam deploy"
+    ]
+}

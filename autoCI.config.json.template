@@ -1,0 +1,10 @@
+{
+    "actions":[
+        "cd {{.AppPath}} && yarn install",
+        "cd {{.AppPath}} && yarn test",
+        "cd {{.AppPath}} && rm -r test",
+        "sam build",
+        "sam local invoke \"{{.AppName}}Function\" -e events/event.json --env-vars env.json",
+        "sam deploy"
+    ]
+}

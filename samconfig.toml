@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "app" # your app name
+# s3_bucket = "<no value>" also uncomment in config.yaml
+# s3_prefix = "app"
+region = "eu-central-1"
+confirm_changeset = false
+capabilities = "CAPABILITY_IAM"
