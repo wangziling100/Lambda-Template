@@ -25,8 +25,8 @@ Resources:
             Method: post
       Environment:
         Variables:
-          {{- range .Variables}}
-          {{.}}
+          {{- range $index, $value := .Variables}}
+          {{$v := split ":" $value}} {{$v._0}}: "{{$v._1}}"
           {{- end}}
   DependencyLayer:
     Type: AWS::Serverless::LayerVersion
