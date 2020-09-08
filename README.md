@@ -12,6 +12,7 @@ This templete help you creating a AWS Lambda application. What you need to do is
 
 ```sh
 bash script/install_frep.sh
-bash fill_template.sh
-bash rename.sh
+bash script/fill_template.sh
+bash script/rename.sh
+bash script/clear.sh
 ```
