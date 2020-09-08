@@ -21,6 +21,8 @@ jobs:
             key: ${{ runner.os }}-${{ hashFiles('**/yarn-lock.json') }}
       - name: Install sam
         run: pip install aws-sam-cli >/dev/null 2>&1
+      - name: Fill template out
+        run: bash script/fill_template.sh
       - name: auto-ci
         id: auto-ci
         uses: wangziling100/AutoCI@v1.0.8
