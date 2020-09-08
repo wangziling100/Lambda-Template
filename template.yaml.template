@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  build website
+  lambda template
   
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
@@ -15,7 +15,7 @@ Resources:
       CodeUri: {{.AppPath}}/
       Layers:
         - !Ref DependencyLayer
-      Handler: {{.AppPath}}.{{.Handler}}
+      Handler: app.{{.Handler}}
       Runtime: nodejs12.x
       Events:
         Gateway:

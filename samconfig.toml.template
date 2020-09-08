@@ -3,8 +3,8 @@ version = {{.Version}}
 [default.deploy]
 [default.deploy.parameters]
 stack_name = "{{.AppPath}}" # your app name
-# s3_bucket = "{{.S3}}" also uncomment in config.yaml
-# s3_prefix = "{{.AppPath}}"
+s3_bucket = "{{.S3}}" 
+s3_prefix = "{{.AppPath}}"
 region = "{{.Region}}"
 confirm_changeset = false
 capabilities = "CAPABILITY_IAM"

@@ -23,8 +23,12 @@ jobs:
         run: pip install aws-sam-cli >/dev/null 2>&1
       - name: Install frep
         run: bash script/install_frep.sh
+        env:
+          BUILD_ENV: ci
       - name: Fill template out
         run: bash script/fill_template.sh
+        env: 
+          BUILD_ENV: ci
       - name: Rename root dir
         run: bash script/rename.sh
       - name: auto-ci

@@ -7,4 +7,4 @@ Variables: # env variables
   - k2:v2
 Region: eu-central-1
 Version: 0.1
-#S3: your S3 bucket
+S3: "aws-sam-cli-managed-default-samclisourcebucket-161lv729ydotn" # your S3 bucket
