@@ -25,6 +25,8 @@ jobs:
         run: bash script/install_frep.sh
       - name: Fill template out
         run: bash script/fill_template.sh
+      - name: Rename root dir
+        run: bash script/rename.sh
       - name: auto-ci
         id: auto-ci
         uses: wangziling100/AutoCI@v1.0.8
