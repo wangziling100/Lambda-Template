@@ -8,4 +8,5 @@ exports.handler= (event, context) =>{
             message: 'Hello World!'
         })
     }
+    return response
 }
